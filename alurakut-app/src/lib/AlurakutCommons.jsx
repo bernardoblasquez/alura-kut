@@ -162,11 +162,29 @@ AlurakutMenu.Logo = styled.img`
   height: 34px;
 `;
 
+const UserPhoto = styled.div`
+  background-color: #ffffff;
+  padding: 9px 14px;
+  border-radius: 1000px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+
+  img{
+    height: 90px;
+    width: 90px;
+  }
+`;
+
 function AlurakutMenuProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
+      <UserPhoto>
         <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} />
+      </UserPhoto>
+        
         <hr />
         <p>
           <a className="boxLink" href={`/user/${githubUser}`}>
