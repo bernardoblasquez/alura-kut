@@ -174,6 +174,7 @@ const UserPhoto = styled.div`
   img{
     height: 90px;
     width: 90px;
+    border-radius: 8px;
   }
 `;
 
@@ -181,9 +182,9 @@ function AlurakutMenuProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
-      <UserPhoto>
-        <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} />
-      </UserPhoto>
+        <UserPhoto>
+          <img src={`https://github.com/${githubUser}.png`} />
+        </UserPhoto>
         
         <hr />
         <p>
